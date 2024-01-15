@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="currency_converter/currency_converter.css" />
+        <link rel="stylesheet" type="text/css" href="forecaster/forecaster.css">
+        <!--to enable the use of icon in HMTL Code by using fontawesome-->
+        <script src="https://kit.fontawesome.com/464c5a0ec4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <img alt="" src="image/background.png" class="logo" height="70">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li><a href="#weather forecast">weather forecast</a></li> -->
+                    <!-- <li><a href="#currency converter">currency converter</a></li> -->
+                    <li><i class="fas fa-times" onclick="closemeun()"></i></li>
+                </ul>
+                    <i class="fas fa-bars" onclick="openmeun()"></i>
+            </nav>
+            
+        </div>
+        <div id="main" class="container">
+            <!--this is the header text container-->
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>ABOLOGBONRIN OLUWOLE WILLIAMS</span><br>From Ekiti State, Nigeria</h1>
+            </div>
+            <!--end of header text-->
+
+            <!--about me-->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img alt="" src="image/homepage.jpeg"/>
+                        </div>
+
+
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p> I ABOLOGBONRIN OLUWOLE WILLIAMS,  a passionate web developer with a keen interest in creating meaningful and user-friendly web experiences. I specialize in front-end and back-end technologies, and I'm always excited to learn and explore new things.
+
+                                .</p>
+
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                    <li><span>Web Development</span><br>Web app Development</li>
+                                    <li><span>App Development</span><br>Building Andriod</li>
+                                    <li><span>AWS solution architect</span><br>Identity access management</li>
+                                    <li><span>microsoft azure</span><br>Identity access management</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2023 - current</span><br>UNG Healthcare</li>
+                                    <li><span>2019 - current</span><br> UI/UX Design Executive at creative minds ltd. Russia. remotely</li>
+                                    <li><span>2017 - 2019</span><br>UI/UX Design Executive, cloud enigineer (AWS) at C.M & Co Solutions Limited. Nigeria</li>
+                                    <li><span>2019 - 2020 </span><br>
+                                        National Youth Service Corps ( IT support)<br>Down Stream petroleun</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2023-current</span><br>Computer science msc. Staffordshire university.</li>
+                                    <li><span>2018</span><br> Project management technology, Federal university of technology akure, Nigeria.</li>
+                                    <li><span>2008</span><br>National examinational council. Nigeria</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--services-->
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">Services</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Web Design</h2>
+                            <p>put a description on here about the\\ web \\design\</p>
+                            <a href="#">learn more</a>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-crop"></i>
+                            <h2>UI/UX Design</h2>
+                            <p>put a description on here about the\\ web \\design\</p>
+                            <a href="#">learn more</a>
+                        </div>
+
+                        <div>
+                            <i class="fa-brands fa-app-store-ios"></i>
+                            <h2>App Design</h2>
+                            <p>put a description on here about the\\ web \\design\</p>
+                            <a href="#">learn more</a>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-aws"></i>
+                            <h2>AWS cloud computing</h2>
+                            <p>put a description on here about the\\ web \\design\</p>
+                            <a href="#">learn more</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-cloud"></i>
+                            <h2>microsoft azure</h2>
+                            <p>put a description on here about the\\ web \\design\</p>
+                            <a href="#">learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div id="currency">
+                <div class="wrapper">
+                    <header>Currency Converter</header>
+                    <p>You cannot convert amount greater than => 10,000</p>
+                    <form action="#">
+                      <div class="amount">
+                        <p>Enter Amount</p>
+                        <input id="inputAmount" type="number" value="1">
+                      </div>
+                      <div class="drop-list">
+                        <div class="from">
+                          <p>From</p>
+                          <div class="select-box">
+                            
+                            <select id="source_currency"> <!-- Options tag are inserted from JavaScript --> </select>
+                          </div>
+                        </div>
+                        <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                        <div class="to">
+                          <p>To</p>
+                          <div class="select-box">
+                            <select id="destination_currency"> </select>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <br><br><br>
+                      <p id="currentExRate"></p>
+                      <p id="exchangeRateTxt"></p>
+                    
+                      <p id="lstExchangeRateUpdate"></p>
+                      <br>
+                      
+                      <button id="submitBtn">Get Exchange Rate</button>
+                    </form>
+                  </div>
+            </div>
+
+            <div id="forecast">
+                <div id="main_div">
+                    <p id="mode_text">Historical Mode</p>
+                    <div id="mode_btn_div">
+                        <button id="mode_btn">Forecast Mode</button>
+                    </div>
+                  
+                    <br>
+                
+                    <canvas id="forecasterChart"></canvas>
+                
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+                
+                
+                    <br>
+                    <br>
+                    <div class="flex-box-btn">
+                    <button id="previous">Previous</button>
+                    
+                    <button id="next">Next</button>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+
+            
+
+            <!--contact-->
+            <div id="contact">
+                <div class="container">
+                    <br><br>
+                    <div class="row">
+                        <div class="contact-left">
+                             
+                            <h3 class="sub-title">Contact Me</h3>
+                            <p><i class="fa-solid fa-paper-plane"></i> oluwole.willy@yahoo.com</p>
+                            <p><i class="fa-solid fa-paper-plane"></i> oluwole.willy@gmail.com</p>
+                            <p><i class="fa-solid fa-square-phone"></i> +44 (0) 7393132942</p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/oluwolewiliams" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.twitter.com/@oluwolewiliams" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.instagram.com/williams_chancellor" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/abologbonrin-oluwole-67446612b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+
+                            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <fieldset>
+                                <legend>feedback</legend>
+                                <form>
+                                    <input type="text" name="Name" placeholder="Your Name" required>
+                                    <input type="text" name="Email" placeholder="Your Email" required>
+                                    <input type="text" name="message" placeholder="text" required>
+                                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                    <button type="submit" class="btn btn2">Submit</button>
+                                    
+                                </form>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--weather forecast-->
+            
+        </div>
+        
+        <footer class="copyright">
+            <p>&copy; 2024 WILLIAMS. All rights reserved. <i class="fa-solid fa-heart"></i></p>
+        </footer>
+    
+
+
+        <!--java script tag-->
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+
+        </script>
+        
+        <script src="currency_converter/currency_converter.js"></script>
+        <script src="forecaster/forecaster_script.js"></script>
+
+        <script>
+
+            var sidemeu = document.getElementById("sidemenu");
+
+            function openmeun(){
+                sidemeu.style.right = "0";
+            }
+
+            function closemeun(){
+                sidemeu.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
+
+            
+    
+        
