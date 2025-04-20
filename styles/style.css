@@ -28,7 +28,7 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
     position: fixed;
-    background-color: #34a853;
+    background-color: #0a0a0a;
     width: 100%;
     padding: 20px;
     z-index: 2;
@@ -162,7 +162,10 @@ nav ul li a:hover::after{
     display: block;
 
 }
+.button:hover::after {filter: brightness(30px);}
 
+
+.button:hover::before {transform: rotate(-180deg);}
 /* ----------------services------------ */
 
 #services{
@@ -277,7 +280,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid ##34A853;
+    border: 1px solid #34A853;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -352,7 +355,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #f#;
+    background-color: aliceblue;
     font-weight: 300;
     margin-top: 20px;
 }
